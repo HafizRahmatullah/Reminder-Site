@@ -4,7 +4,7 @@ import CreateReminderModal from "../../components/CreateReminderModal";
 import Sidebar from "../../components/Sidebar";
 import Header from "../../components/Header";
 import Calander from "../../components/Calander";
-import HistoryPage from "./Historypage";
+import HistoryPage from "Historypage";
 import SettingPage from "./SettingPage";
 
 // --- Stat Card ---
