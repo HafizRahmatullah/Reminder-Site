@@ -20,7 +20,7 @@ const navItems = [
 
 function Sidebar({ activeView, setActiveView }) {
   return (
-    <aside className="fixed flex flex-col w-64 h-screen bg-slate-900 text-gray-50 shadow-xl p-4">
+    <aside className="w-64 min-h-screen bg-gray-900 text-white flex flex-col shadow-xl flex-shrink-0">
       
       {/* Header */}
       <div className="flex items-center p-4 mb-4 border-b border-slate-700">

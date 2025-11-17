@@ -31,19 +31,23 @@ function AppLayout() {
   };
 
   return (
-    <div className="flex flex-col min-h-screen bg-gray-50">
+    <div className="flex min-h-screen bg-gray-100">
       {/* ✅ Header always on top */}
-      <Header setActiveView={setActiveView} />
+    
 
       {/* ✅ Sidebar + Main Area */}
-      <div className="flex flex-grow">
-        {/* Sidebar (except special views) */}
-        {activeView !== 'dashboard' && activeView !== 'users' && (
+            {activeView !== 'dashboard' && activeView !== 'users' && (
           <Sidebar activeView={activeView} setActiveView={setActiveView} />
         )}
+        
+      <div className="flex-1 flex flex-col">
+        {/* Sidebar (except special views) */}
+          <Header setActiveView={setActiveView} />
+       
+       
 
         {/* ✅ Main Page Area */}
-        <main className="flex-grow ml-64 p-6 mt-[64px] bg-gray-50">
+        <main className="flex-1 p-6">
           {renderContent()}
         </main>
       </div>
